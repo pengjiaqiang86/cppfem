@@ -1,0 +1,36 @@
+"Explicit Transient Analysis: Uniform ICs"
+
+"nels   np_types"
+  10       1
+
+"(cv(i),i=1,np_types)"
+1.0
+
+"(etype(i),i=1,nels)(not needed if np_types=1)"
+
+"element lengths (ell(i),i=1,nels)"
+0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+
+"Time Stepping Data"
+"dtim  nstep  npri  nres  ntime"
+0.005   400    20    11    400
+ 
+"Initial conditions from top to bottom"
+"loads(i),i=1,nels+1"
+100.0
+100.0
+100.0
+100.0
+100.0
+100.0
+100.0
+100.0
+100.0
+100.0
+100.0
+
+"Fixed boundary Conditions"
+"(fixed_freedoms, (node(i),value(i),i=1,fixed freedoms)"
+1
+1  0.0
+
