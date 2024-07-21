@@ -1,0 +1,34 @@
+{
+    "//": "[Elastic Modulus, Moment of Inertia, Area]",
+    "materials": [
+        [200E9,32E-5,1E-2]
+    ],
+
+    "points": [
+        [0.0,0.0],
+        [0.0,4.0],
+        [4.0,4.0],
+        [4.0,0.0]
+    ],
+
+    "//": "[node1, node2, material]",
+    "elements": [
+        [1,2,0], 
+        [0,1,0],
+        [3,2,0]
+    ],
+
+    "//": "[element, n1, s1, b1, n2, s2, b2], 1 means release constraints, 0 means keeping it unchanged, n->axial, s->shearing, b->bending",
+    "release": [],
+
+    "//": "[node, x, y, r], 1 means beam constraints, 0 means beam unconstrained",
+    "constraints": [
+        [0,1,1,1],
+        [3,1,1,1]
+    ],
+
+    "//": "[node, x, y, r], integral coordinate system",
+    "forces": [
+        [1,50E3,0.0,0.0]
+    ]
+}
